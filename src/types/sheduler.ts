@@ -3,24 +3,24 @@ export enum Division {
   HS = "HS",
 }
 
-export enum Roles {
-  Mschn = "MS CHN",
-  G8drama = "G8 Drama",
-  Drama = "Drama",
-  Dl = "DL",
-  Tset = "TSET",
-  Gll = "GLL",
-  History = "History",
-  Bm = "BM",
-  Dos = "DoS",
-  Dormhead = "Dorm Head",
-  New = "NEW",
-  Capstonec = "CapstoneC",
-  Sa = "SA",
-  Ess = "ESS",
-  Tok = "ToK",
-  Econ = "Econ",
-}
+// export enum Roles {
+//   Mschn = "MS CHN",
+//   G8drama = "G8 Drama",
+//   Drama = "Drama",
+//   Dl = "DL",
+//   Tset = "TSET",
+//   Gll = "GLL",
+//   History = "History",
+//   Bm = "BM",
+//   Dos = "DoS",
+//   Dormhead = "Dorm Head",
+//   New = "NEW",
+//   Capstonec = "CapstoneC",
+//   Sa = "SA",
+//   Ess = "ESS",
+//   Tok = "ToK",
+//   Econ = "Econ",
+// }
 
 export enum Color {
   C6 = "#F0DD86",
@@ -57,20 +57,36 @@ export const CourseColorMap: Record<CourseGroup, Color> = {
 
 export interface Course {
   id: string;
-  label: string;
-  color: Color;
-  // division: Division;
+  name: string;
+  total_students: number | null;
+  total_sections: number | null;
+  total_periods: number | null;
+  periods_per_cycle: number | null;
+  students_per_section: number | null;
   group: CourseGroup;
-  totalStudents: number;
-  periodPerCycle: number;
-  assignedTo: string[]; // teacher ids
 }
+
+// "total_students": null,
+// "total_sections": null,
+// "total_periods": null,
+// "periods_per_cycle": null,
+// "students_per_section": null,
+
+// {
+//   "id": "16",
+//   "name": "World Civilizations 10",
+//   "total_students": 121,
+//   "total_sections": 7,
+//   "total_periods": 21,
+//   "periods_per_cycle": 3,
+//   "students_per_section": 17
+// },
 
 export interface Teacher {
   id: string;
   name: string;
   division: Division;
-  otherRole: string[];
+  otherRoles: string[];
   maxLoad: number;
-  assignedCourses: Course[];
+  courses: (Course & { periods: number })[];
 }
