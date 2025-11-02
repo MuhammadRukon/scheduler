@@ -70,7 +70,6 @@ export function SchedulerGrid() {
     fetchCourses();
   }, []);
 
-  console.log(data);
   const columns = useMemo<ColumnDef<Teacher>[]>(
     () => [
       {
@@ -138,7 +137,7 @@ export function SchedulerGrid() {
     [courses]
   );
 
-  // The virtualizer will need a reference to the scrollable container element
+  //refs for table containers. needed for virtualization
   const tableMsContainerRef = useRef<HTMLDivElement>(null);
   const tableHsContainerRef = useRef<HTMLDivElement>(null);
 
@@ -156,7 +155,6 @@ export function SchedulerGrid() {
     columns,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
-    debugTable: true,
     state: { columnVisibility },
     onColumnVisibilityChange: setColumnVisibility,
   });
@@ -166,28 +164,51 @@ export function SchedulerGrid() {
     columns,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
-    debugTable: true,
     state: { columnVisibility },
     onColumnVisibilityChange: setColumnVisibility,
   });
 
+  //refetch function used after Patch / put request.
   const onRefetch = useCallback(() => setRefetch((prev) => !prev), []);
+
+  const groups = [...new Set(courses?.map((course) => course.group))];
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap gap-2 mb-4">
-        {courses.map((course) => {
-          const column = msTable
+      <div className="absolute top-5 left-1/2 -translate-x-1/2 flex flex-wrap mb-4 gap-5">
+        {groups.map((group) => {
+          //check if all columns in the group are visible
+          const isGroupVisible = msTable
             .getAllColumns()
-            .find((c) => c.id === course.id);
+            .filter(
+              (c) => (c.columnDef.meta as CustomColumnMeta)?.group === group
+            )
+            .every((c) => c.getIsVisible());
+
           return (
-            <label key={course.id} className="flex items-center gap-1 text-sm">
+            <label key={group} className="flex items-center gap-1 text-sm">
               <input
                 type="checkbox"
-                checked={column?.getIsVisible()}
-                onChange={() => column?.toggleVisibility()}
+                checked={isGroupVisible}
+                onChange={() => {
+                  //next toggle state for the group
+                  const nextToggle = !isGroupVisible;
+
+                  msTable.setColumnVisibility((old) => {
+                    const visibilityUpdate = { ...old };
+                    msTable
+                      .getAllColumns()
+                      .filter(
+                        (c) =>
+                          (c.columnDef.meta as CustomColumnMeta)?.group ===
+                          group
+                      )
+                      .forEach((c) => (visibilityUpdate[c.id] = nextToggle));
+                    return visibilityUpdate;
+                  });
+                }}
               />
-              {course.name}
+              {group}
             </label>
           );
         })}

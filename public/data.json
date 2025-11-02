@@ -342,6 +342,28 @@
           "periods_per_cycle": 2,
           "students_per_section": 15,
           "group": "C6"
+        },
+        {
+          "id": "1",
+          "name": "CCW 6",
+          "periods": 6,
+          "total_students": 119,
+          "total_sections": 8,
+          "total_periods": 16,
+          "periods_per_cycle": 2,
+          "students_per_section": 15,
+          "group": "C6"
+        },
+        {
+          "id": "1",
+          "name": "CCW 6",
+          "periods": 6,
+          "total_students": 119,
+          "total_sections": 8,
+          "total_periods": 16,
+          "periods_per_cycle": 2,
+          "students_per_section": 15,
+          "group": "C6"
         }
       ]
     },
@@ -372,17 +394,6 @@
       "maxLoad": 18,
       "otherRoles": [],
       "courses": [
-        {
-          "id": "2",
-          "name": "ECW 6",
-          "total_students": 129,
-          "total_sections": 8,
-          "total_periods": 24,
-          "periods_per_cycle": 3,
-          "students_per_section": 16,
-          "group": "C6",
-          "periods": 9
-        },
         {
           "id": "6",
           "name": "ECW 7",
@@ -432,19 +443,10 @@
       "name": "MW",
       "division": "MS",
       "maxLoad": 18,
-      "otherRoles": ["MS CHN"],
+      "otherRoles": [
+        "MS CHN"
+      ],
       "courses": [
-        {
-          "id": "1",
-          "name": "CCW 6",
-          "total_students": 119,
-          "total_sections": 8,
-          "total_periods": 16,
-          "periods_per_cycle": 2,
-          "students_per_section": 15,
-          "group": "C6",
-          "periods": 2
-        },
         {
           "id": "8",
           "name": "CCW 8",
@@ -485,7 +487,9 @@
       "name": "CM",
       "division": "MS",
       "maxLoad": 18,
-      "otherRoles": ["G8 Drama"],
+      "otherRoles": [
+        "G8 Drama"
+      ],
       "courses": [
         {
           "id": "28",
@@ -569,7 +573,9 @@
       "name": "RM",
       "division": null,
       "maxLoad": 0,
-      "otherRoles": ["Drama"],
+      "otherRoles": [
+        "Drama"
+      ],
       "courses": []
     },
     {
@@ -577,7 +583,10 @@
       "name": "NeD",
       "division": "MS",
       "maxLoad": 15,
-      "otherRoles": ["DL", "TSET"],
+      "otherRoles": [
+        "DL",
+        "TSET"
+      ],
       "courses": [
         {
           "id": "2",
@@ -608,7 +617,10 @@
       "name": "XJ",
       "division": "MS",
       "maxLoad": 15,
-      "otherRoles": ["GLL", "TSET"],
+      "otherRoles": [
+        "GLL",
+        "TSET"
+      ],
       "courses": [
         {
           "id": "4",
@@ -650,7 +662,9 @@
       "name": "KS",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["History"],
+      "otherRoles": [
+        "History"
+      ],
       "courses": [
         {
           "id": "16",
@@ -692,7 +706,9 @@
       "name": "WY",
       "division": "HS",
       "maxLoad": 18,
-      "otherRoles": ["GL1"],
+      "otherRoles": [
+        "GL1"
+      ],
       "courses": [
         {
           "id": "11",
@@ -734,7 +750,9 @@
       "name": "NG",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["History"],
+      "otherRoles": [
+        "History"
+      ],
       "courses": [
         {
           "id": "16",
@@ -768,6 +786,17 @@
           "students_per_section": 13,
           "group": "HL2",
           "periods": 10
+        },
+        {
+          "id": "1",
+          "name": "CCW 6",
+          "total_students": 119,
+          "total_sections": 8,
+          "total_periods": 16,
+          "periods_per_cycle": 2,
+          "students_per_section": 15,
+          "group": "C6",
+          "periods": 2
         }
       ]
     },
@@ -776,7 +805,10 @@
       "name": "DJ",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["M", "Dorm Head"],
+      "otherRoles": [
+        "M",
+        "Dorm Head"
+      ],
       "courses": [
         {
           "id": "6",
@@ -818,7 +850,10 @@
       "name": "HM",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["ToK", "BM"],
+      "otherRoles": [
+        "ToK",
+        "BM"
+      ],
       "courses": [
         {
           "id": "20",
@@ -860,7 +895,10 @@
       "name": "OB",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["ToK", "Econ"],
+      "otherRoles": [
+        "ToK",
+        "Econ"
+      ],
       "courses": [
         {
           "id": "19",
@@ -902,7 +940,9 @@
       "name": "MD",
       "division": "HS",
       "maxLoad": 0,
-      "otherRoles": ["DoS"],
+      "otherRoles": [
+        "DoS"
+      ],
       "courses": []
     },
     {
@@ -910,7 +950,10 @@
       "name": "HJ",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["Econ", "ToK"],
+      "otherRoles": [
+        "Econ",
+        "ToK"
+      ],
       "courses": [
         {
           "id": "19",
@@ -941,7 +984,9 @@
       "name": "LZ",
       "division": "HS",
       "maxLoad": 15,
-      "otherRoles": ["DL"],
+      "otherRoles": [
+        "DL"
+      ],
       "courses": [
         {
           "id": "6",
@@ -983,7 +1028,9 @@
       "name": "LH",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["TSET"],
+      "otherRoles": [
+        "TSET"
+      ],
       "courses": [
         {
           "id": "11",
@@ -1036,7 +1083,9 @@
       "name": "NT",
       "division": "HS",
       "maxLoad": 21,
-      "otherRoles": ["NEW"],
+      "otherRoles": [
+        "NEW"
+      ],
       "courses": [
         {
           "id": "6",
@@ -1081,6 +1130,17 @@
           "students_per_section": null,
           "group": "Other",
           "periods": 2
+        },
+        {
+          "id": "2",
+          "name": "ECW 6",
+          "total_students": 129,
+          "total_sections": 8,
+          "total_periods": 24,
+          "periods_per_cycle": 3,
+          "students_per_section": 16,
+          "group": "C6",
+          "periods": 9
         }
       ]
     },
@@ -1089,7 +1149,9 @@
       "name": "HQ",
       "division": "HS",
       "maxLoad": 18,
-      "otherRoles": ["Capstone D"],
+      "otherRoles": [
+        "Capstone D"
+      ],
       "courses": [
         {
           "id": "11",
@@ -1120,7 +1182,10 @@
       "name": "RA",
       "division": "HS",
       "maxLoad": 12,
-      "otherRoles": ["SA", "TSET"],
+      "otherRoles": [
+        "SA",
+        "TSET"
+      ],
       "courses": [
         {
           "id": "12",
@@ -1151,7 +1216,11 @@
       "name": "WG",
       "division": "HS",
       "maxLoad": 18,
-      "otherRoles": ["IL", "ToK", "ES"],
+      "otherRoles": [
+        "IL",
+        "ToK",
+        "ES"
+      ],
       "courses": [
         {
           "id": "22",

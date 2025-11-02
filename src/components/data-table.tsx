@@ -1,4 +1,4 @@
-import { useState, type RefObject } from "react";
+import { useEffect, useState, type RefObject } from "react";
 
 import { flexRender, type Table } from "@tanstack/react-table";
 import { TableBody } from "./table-body";
@@ -18,7 +18,21 @@ export default function DataTable<T, S>({
   title,
   refetch,
 }: DataTableProps<T, S>) {
-  const [collapsed, setCollapsed] = useState<boolean>(false);
+  function formatTitle(title: string) {
+    return title.toLowerCase().split(" ").join("-") || "";
+  }
+
+  const [collapsed, setCollapsed] = useState<boolean>(() => {
+    if (!title) return false;
+    const titleFormatted = formatTitle(title);
+    return localStorage.getItem(`${titleFormatted}-collapsed`) === "true";
+  });
+
+  useEffect(() => {
+    if (!title) return;
+    const titleFormatted = formatTitle(title);
+    localStorage.setItem(`${titleFormatted}-collapsed`, collapsed.toString());
+  }, [collapsed, title]);
 
   return (
     <>
@@ -34,7 +48,7 @@ export default function DataTable<T, S>({
       </div>
       <div
         className={`w-full border border-gray-300 rounded-lg overflow-auto relative transition-all duration-300 ${
-          collapsed ? "h-0" : "h-[39vh]"
+          collapsed ? "h-0" : "h-[42vh]"
         }`}
         ref={tableContainerRef}
       >

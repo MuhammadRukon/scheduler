@@ -111,8 +111,10 @@ function TableBodyRow<T>({
             body: JSON.stringify(sourceTeacher),
           }
         );
+
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const updatedSourceTeacher = await teacherRes.json();
-        console.log(updatedSourceTeacher);
+        // console.log(updatedSourceTeacher);
 
         const targetTeacherRes = await fetch(
           `http://localhost:3000/teachers/${targetTeacher.id}`,
@@ -121,8 +123,9 @@ function TableBodyRow<T>({
             body: JSON.stringify(targetTeacher),
           }
         );
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const updatedTargetTeacher = await targetTeacherRes.json();
-        console.log(updatedTargetTeacher);
+        // console.log(updatedTargetTeacher);
 
         refetch();
       } catch (error) {
