@@ -291,7 +291,6 @@
       "group": "Other"
     }
   ],
-
   "teachers": [
     {
       "id": "lx",
@@ -300,17 +299,6 @@
       "maxLoad": 18,
       "otherRoles": [],
       "courses": [
-        {
-          "id": "1",
-          "name": "CCW 6",
-          "periods": 6,
-          "total_students": 119,
-          "total_sections": 8,
-          "total_periods": 16,
-          "periods_per_cycle": 2,
-          "students_per_section": 15,
-          "group": "C6"
-        },
         {
           "id": "3",
           "name": "CCW (E) 6",
@@ -332,6 +320,28 @@
           "periods_per_cycle": 3,
           "students_per_section": 16,
           "group": "C7"
+        },
+        {
+          "id": "1",
+          "name": "CCW 6",
+          "periods": 6,
+          "total_students": 119,
+          "total_sections": 8,
+          "total_periods": 16,
+          "periods_per_cycle": 2,
+          "students_per_section": 15,
+          "group": "C6"
+        },
+        {
+          "id": "1",
+          "name": "CCW 6",
+          "periods": 6,
+          "total_students": 119,
+          "total_sections": 8,
+          "total_periods": 16,
+          "periods_per_cycle": 2,
+          "students_per_section": 15,
+          "group": "C6"
         }
       ]
     },
@@ -342,17 +352,6 @@
       "maxLoad": 18,
       "otherRoles": [],
       "courses": [
-        {
-          "id": "1",
-          "name": "CCW 6",
-          "periods": 8,
-          "total_students": 119,
-          "total_sections": 8,
-          "total_periods": 16,
-          "periods_per_cycle": 2,
-          "students_per_section": 15,
-          "group": "C6"
-        },
         {
           "id": "8",
           "name": "CCW 8",
@@ -520,6 +519,17 @@
           "students_per_section": 16,
           "group": "C6",
           "periods": 6
+        },
+        {
+          "id": "1",
+          "name": "CCW 6",
+          "periods": 8,
+          "total_students": 119,
+          "total_sections": 8,
+          "total_periods": 16,
+          "periods_per_cycle": 2,
+          "students_per_section": 15,
+          "group": "C6"
         }
       ]
     },
@@ -3384,6 +3394,1974 @@
     {
       "id": "T300",
       "name": "LN",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T001",
+      "name": "AA",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T021",
+      "name": "AU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T022",
+      "name": "AV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T023",
+      "name": "AW",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T024",
+      "name": "AX",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T025",
+      "name": "AY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T026",
+      "name": "AZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T027",
+      "name": "BA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T028",
+      "name": "BB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T029",
+      "name": "BC",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T030",
+      "name": "BD",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T031",
+      "name": "BE",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T032",
+      "name": "BF",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T039",
+      "name": "BM",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T040",
+      "name": "BN",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T041",
+      "name": "BO",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T042",
+      "name": "BP",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T043",
+      "name": "BQ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T044",
+      "name": "BR",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T045",
+      "name": "BS",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T046",
+      "name": "BT",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T047",
+      "name": "BU",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T048",
+      "name": "BV",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T049",
+      "name": "BW",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T050",
+      "name": "BX",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T051",
+      "name": "BY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T052",
+      "name": "BZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T053",
+      "name": "CA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T054",
+      "name": "CB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T055",
+      "name": "CC",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T056",
+      "name": "CD",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T057",
+      "name": "CE",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T058",
+      "name": "CF",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T059",
+      "name": "CG",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T060",
+      "name": "CH",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T061",
+      "name": "CI",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T062",
+      "name": "CJ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T063",
+      "name": "CK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T064",
+      "name": "CL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T065",
+      "name": "CM",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T066",
+      "name": "CN",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T067",
+      "name": "CO",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T068",
+      "name": "CP",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T069",
+      "name": "CQ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T070",
+      "name": "CR",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T071",
+      "name": "CS",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T072",
+      "name": "CT",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T073",
+      "name": "CU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T074",
+      "name": "CV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T075",
+      "name": "CW",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T076",
+      "name": "CX",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T077",
+      "name": "CY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T078",
+      "name": "CZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T079",
+      "name": "DA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T080",
+      "name": "DB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T081",
+      "name": "DC",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T082",
+      "name": "DD",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T083",
+      "name": "DE",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T084",
+      "name": "DF",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T085",
+      "name": "DG",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T086",
+      "name": "DH",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T087",
+      "name": "DI",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T088",
+      "name": "DJ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T089",
+      "name": "DK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T090",
+      "name": "DL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T091",
+      "name": "DM",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T092",
+      "name": "DN",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T093",
+      "name": "DO",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T094",
+      "name": "DP",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T095",
+      "name": "DQ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T096",
+      "name": "DR",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T097",
+      "name": "DS",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T098",
+      "name": "DT",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T099",
+      "name": "DU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T100",
+      "name": "DV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T101",
+      "name": "DW",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T102",
+      "name": "DX",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T103",
+      "name": "DY",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T104",
+      "name": "DZ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T105",
+      "name": "EA",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T106",
+      "name": "EB",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T107",
+      "name": "EC",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T108",
+      "name": "ED",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T109",
+      "name": "EE",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T110",
+      "name": "EF",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T111",
+      "name": "EG",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T112",
+      "name": "EH",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T113",
+      "name": "EI",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T114",
+      "name": "EJ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T115",
+      "name": "EK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T116",
+      "name": "EL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T117",
+      "name": "EM",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T118",
+      "name": "EN",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T119",
+      "name": "EO",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T120",
+      "name": "EP",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T121",
+      "name": "EQ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T122",
+      "name": "ER",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T123",
+      "name": "ES",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T124",
+      "name": "ET",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T125",
+      "name": "EU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T126",
+      "name": "EV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T127",
+      "name": "EW",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T128",
+      "name": "EX",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T129",
+      "name": "EY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T130",
+      "name": "EZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T131",
+      "name": "FA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T132",
+      "name": "FB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T133",
+      "name": "FC",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T134",
+      "name": "FD",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T135",
+      "name": "FE",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T136",
+      "name": "FF",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T137",
+      "name": "FG",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T138",
+      "name": "FH",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T139",
+      "name": "FI",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T140",
+      "name": "FJ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T141",
+      "name": "FK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T142",
+      "name": "FL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T143",
+      "name": "FM",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T144",
+      "name": "FN",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T145",
+      "name": "FO",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T146",
+      "name": "FP",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T147",
+      "name": "FQ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T148",
+      "name": "FR",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T149",
+      "name": "FS",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T150",
+      "name": "FT",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T151",
+      "name": "FU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T152",
+      "name": "FV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T153",
+      "name": "FW",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T154",
+      "name": "FX",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T155",
+      "name": "FY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T156",
+      "name": "FZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T157",
+      "name": "GA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T158",
+      "name": "GB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T159",
+      "name": "GC",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T160",
+      "name": "GD",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T161",
+      "name": "GE",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T162",
+      "name": "GF",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T163",
+      "name": "GG",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T164",
+      "name": "GH",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T165",
+      "name": "GI",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T166",
+      "name": "GJ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T167",
+      "name": "GK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T168",
+      "name": "GL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T169",
+      "name": "GM",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T170",
+      "name": "GN",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T171",
+      "name": "GO",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T172",
+      "name": "GP",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T173",
+      "name": "GQ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T174",
+      "name": "GR",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T175",
+      "name": "GS",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T176",
+      "name": "GT",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T177",
+      "name": "GU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T178",
+      "name": "GV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T179",
+      "name": "GW",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T180",
+      "name": "GX",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T181",
+      "name": "GY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T182",
+      "name": "GZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T183",
+      "name": "HA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T184",
+      "name": "HB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T185",
+      "name": "HC",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T186",
+      "name": "HD",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T187",
+      "name": "HE",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T188",
+      "name": "HF",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T189",
+      "name": "HG",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T190",
+      "name": "HH",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T191",
+      "name": "HI",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T192",
+      "name": "HJ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T193",
+      "name": "HK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T194",
+      "name": "HL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T195",
+      "name": "HM",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T196",
+      "name": "HN",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T197",
+      "name": "HO",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T198",
+      "name": "HP",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T199",
+      "name": "HQ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T200",
+      "name": "HR",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T201",
+      "name": "HS",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T202",
+      "name": "HT",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T203",
+      "name": "HU",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T204",
+      "name": "HV",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T205",
+      "name": "HW",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T206",
+      "name": "HX",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T207",
+      "name": "HY",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T208",
+      "name": "HZ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T209",
+      "name": "IA",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T210",
+      "name": "IB",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T211",
+      "name": "IC",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T212",
+      "name": "ID",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T213",
+      "name": "IE",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T214",
+      "name": "IF",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T215",
+      "name": "IG",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T216",
+      "name": "IH",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T217",
+      "name": "II",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T218",
+      "name": "IJ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T219",
+      "name": "IK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T220",
+      "name": "IL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T221",
+      "name": "IM",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T222",
+      "name": "IN",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T223",
+      "name": "IO",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T224",
+      "name": "IP",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T225",
+      "name": "IQ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T226",
+      "name": "IR",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T227",
+      "name": "IS",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T228",
+      "name": "IT",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T229",
+      "name": "IU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T230",
+      "name": "IV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T231",
+      "name": "IW",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T232",
+      "name": "IX",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T233",
+      "name": "IY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T234",
+      "name": "IZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T235",
+      "name": "JA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T236",
+      "name": "JB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T237",
+      "name": "JC",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T238",
+      "name": "JD",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T239",
+      "name": "JE",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T240",
+      "name": "JF",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T241",
+      "name": "JG",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T242",
+      "name": "JH",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T243",
+      "name": "JI",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T244",
+      "name": "JJ",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T245",
+      "name": "JK",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T246",
+      "name": "JL",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T247",
+      "name": "JM",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T248",
+      "name": "JN",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T249",
+      "name": "JO",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T250",
+      "name": "JP",
+      "division": "MS",
+      "maxLoad": 18,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T251",
+      "name": "JQ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T252",
+      "name": "JR",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T253",
+      "name": "JS",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T254",
+      "name": "JT",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T255",
+      "name": "JU",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T256",
+      "name": "JV",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T257",
+      "name": "JW",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T258",
+      "name": "JX",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T259",
+      "name": "JY",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T260",
+      "name": "JZ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T261",
+      "name": "KA",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T262",
+      "name": "KB",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T263",
+      "name": "KC",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T264",
+      "name": "KD",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T265",
+      "name": "KE",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T266",
+      "name": "KF",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T267",
+      "name": "KG",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T268",
+      "name": "KH",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T269",
+      "name": "KI",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T270",
+      "name": "KJ",
+      "division": "HS",
+      "maxLoad": 21,
+      "otherRoles": [],
+      "courses": []
+    },
+    {
+      "id": "T271",
+      "name": "KK",
       "division": "MS",
       "maxLoad": 18,
       "otherRoles": [],

@@ -3,25 +3,6 @@ export enum Division {
   HS = "HS",
 }
 
-// export enum Roles {
-//   Mschn = "MS CHN",
-//   G8drama = "G8 Drama",
-//   Drama = "Drama",
-//   Dl = "DL",
-//   Tset = "TSET",
-//   Gll = "GLL",
-//   History = "History",
-//   Bm = "BM",
-//   Dos = "DoS",
-//   Dormhead = "Dorm Head",
-//   New = "NEW",
-//   Capstonec = "CapstoneC",
-//   Sa = "SA",
-//   Ess = "ESS",
-//   Tok = "ToK",
-//   Econ = "Econ",
-// }
-
 export enum Color {
   C6 = "#F0DD86",
   C7 = "#A7D883",
@@ -32,6 +13,28 @@ export enum Color {
   HL2 = "#00AA00",
   Other = "#4D9BF7",
 }
+
+export type Sortable = {
+  availablePeriods: boolean;
+  preps: boolean;
+  students: boolean;
+  maxLoad: boolean;
+  otherRoles: boolean;
+  id: boolean;
+  name: boolean;
+  division: boolean;
+};
+
+export const sortable: Sortable = {
+  otherRoles: true,
+  maxLoad: true,
+  preps: true,
+  availablePeriods: true,
+  students: true,
+  id: false,
+  name: false,
+  division: false,
+};
 
 export enum CourseGroup {
   C6 = "C6",
@@ -65,22 +68,6 @@ export interface Course {
   students_per_section: number | null;
   group: CourseGroup;
 }
-
-// "total_students": null,
-// "total_sections": null,
-// "total_periods": null,
-// "periods_per_cycle": null,
-// "students_per_section": null,
-
-// {
-//   "id": "16",
-//   "name": "World Civilizations 10",
-//   "total_students": 121,
-//   "total_sections": 7,
-//   "total_periods": 21,
-//   "periods_per_cycle": 3,
-//   "students_per_section": 17
-// },
 
 export interface Teacher {
   id: string;
