@@ -170,9 +170,8 @@ function TableBodyRow<T>({
             }
             onDragOver={(e) => isCourseColumn && handleDragOver(e)}
             onDrop={(e) => isCourseColumn && handleDrop(e, cell.column.id)}
-            className="px-2 py-2 text-center items-center justify-center flex"
+            className="px-2 py-2 flex items-center w-full"
             style={{
-              width: cell.column.getSize(),
               backgroundColor:
                 (cell.column.columnDef.meta as CustomColumnMeta)?.color ??
                 "transparent",

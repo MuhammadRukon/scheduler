@@ -57,7 +57,7 @@ export default function DataTable<T, S>({
             {table.getHeaderGroups().map((headerGroup) => (
               <tr
                 key={headerGroup.id}
-                className="px-2 py-2  text-sm flex items-center justify-between gap-2"
+                className="text-sm flex items-stretch justify-between px-2 py-2"
               >
                 {headerGroup.headers.map((header) => {
                   const isSortable = sortable[header.column.id as keyof S];
@@ -72,7 +72,7 @@ export default function DataTable<T, S>({
                   }
 
                   return (
-                    <th key={header.id}>
+                    <th key={header.id} className="w-full">
                       <button
                         type="button"
                         onClick={
@@ -80,7 +80,7 @@ export default function DataTable<T, S>({
                             ? header.column.getToggleSortingHandler()
                             : undefined
                         }
-                        className="cursor-pointer select-none min-w-20 font-medium"
+                        className="cursor-pointer select-none font-medium min-w-26 w-full text-left"
                       >
                         {flexRender(
                           header.column.columnDef.header,

@@ -190,6 +190,7 @@ export function SchedulerGrid() {
               <input
                 type="checkbox"
                 checked={isGroupVisible}
+                className="w-4 h-4"
                 onChange={() => {
                   //next toggle state for the group
                   const nextToggle = !isGroupVisible;
