@@ -25,17 +25,6 @@ export type Sortable = {
   division: boolean;
 };
 
-export const sortable: Sortable = {
-  otherRoles: true,
-  maxLoad: true,
-  preps: true,
-  availablePeriods: true,
-  students: true,
-  id: false,
-  name: false,
-  division: false,
-};
-
 export enum CourseGroup {
   C6 = "C6",
   C7 = "C7",
@@ -69,6 +58,7 @@ export interface Course {
   group: CourseGroup;
 }
 
+//Teacher DTO
 export interface Teacher {
   id: string;
   name: string;
@@ -76,4 +66,5 @@ export interface Teacher {
   otherRoles: string[];
   maxLoad: number;
   courses: (Course & { periods: number })[];
+  // cpts: number;
 }

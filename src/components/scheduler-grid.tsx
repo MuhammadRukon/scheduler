@@ -19,12 +19,11 @@ import {
 import {
   CourseColorMap,
   Division,
-  sortable,
   type Course,
   type Sortable,
   type Teacher,
 } from "../types/sheduler";
-import DataTable from "./data-table";
+import { DataTable } from "./data-table/data-table";
 
 export interface CustomColumnMeta extends ColumnMeta<RowData, unknown> {
   color: string;
@@ -33,10 +32,24 @@ export interface CustomColumnMeta extends ColumnMeta<RowData, unknown> {
 
 export function SchedulerGrid() {
   const [courses, setCourses] = useState<Course[]>([]);
+  const [data, setData] = useState<Teacher[]>([]);
   const [columnVisibility, setColumnVisibility] = useState({});
   const [refetch, setRefetch] = useState(false);
 
-  const [data, setData] = useState<Teacher[]>([]);
+  const sortable: Sortable = {
+    otherRoles: true,
+    maxLoad: true,
+    preps: true,
+    availablePeriods: true,
+    students: true,
+    id: false,
+    name: false,
+    division: false,
+  };
+
+  //refs for table containers. needed for virtualization
+  const tableMsContainerRef = useRef<HTMLDivElement>(null);
+  const tableHsContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     async function fetchTeachers() {
@@ -136,11 +149,6 @@ export function SchedulerGrid() {
     ],
     [courses]
   );
-
-  //refs for table containers. needed for virtualization
-  const tableMsContainerRef = useRef<HTMLDivElement>(null);
-  const tableHsContainerRef = useRef<HTMLDivElement>(null);
-
   const msTeachers = useMemo(
     () => data.filter((t) => t.division === Division.MS || t.division === null),
     [data]

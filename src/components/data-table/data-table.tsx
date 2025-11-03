@@ -1,27 +1,131 @@
-import { flexRender, type Row, type Table } from "@tanstack/react-table";
-import {
-  useVirtualizer,
-  Virtualizer,
-  type VirtualItem,
-} from "@tanstack/react-virtual";
-import type { RefObject } from "react";
-import type { CustomColumnMeta } from "./scheduler-grid";
-import type { Teacher } from "../types/sheduler";
+import { useEffect, useState } from "react";
+import { flexRender, type Row } from "@tanstack/react-table";
+import { useVirtualizer } from "@tanstack/react-virtual";
 
-interface TableBodyProps<T> {
-  table: Table<T>;
-  tableContainerRef: RefObject<HTMLDivElement | null>;
-  refetch: () => void;
+import type { Teacher } from "../../types/sheduler";
+import type { CustomColumnMeta } from "../scheduler-grid";
+import type {
+  DataTableProps,
+  HeaderProps,
+  TableBodyProps,
+  TableBodyRowProps,
+  DragData,
+} from "./data-table.types";
+
+import { formatText } from "../../utils";
+
+export function DataTable<T, S>({
+  table,
+  tableContainerRef,
+  sortable,
+  title,
+  refetch,
+}: DataTableProps<T, S>) {
+  const [collapsed, setCollapsed] = useState<boolean>(() => {
+    if (!title) return false;
+    const titleFormatted = formatText(title);
+    return localStorage.getItem(`${titleFormatted}-collapsed`) === "true";
+  });
+
+  useEffect(() => {
+    if (!title) return;
+    const titleFormatted = formatText(title);
+    localStorage.setItem(`${titleFormatted}-collapsed`, collapsed.toString());
+  }, [collapsed, title]);
+
+  const headerGroups = table.getHeaderGroups();
+
+  return (
+    <>
+      <div className="flex items-center justify-between">
+        {title && <h2 className="text-lg font-semibold">{title}</h2>}
+
+        <button
+          className="rounded-md bg-gray-200 w-16 py-1 text-sm text-gray-800 cursor-pointer active:scale-95"
+          type="button"
+          onClick={() => setCollapsed(!collapsed)}
+        >
+          {collapsed ? "Expand" : "Collapse"}
+        </button>
+      </div>
+      <div
+        className={`w-full border border-gray-300 rounded-lg overflow-auto relative transition-all duration-300 ${
+          collapsed ? "h-0" : "h-[42vh]"
+        }`}
+        ref={tableContainerRef}
+      >
+        <table className="grid">
+          <DataTable.Header<T, S>
+            headerGroups={headerGroups}
+            sortable={sortable}
+          />
+          <DataTable.Body<T>
+            table={table}
+            tableContainerRef={tableContainerRef}
+            refetch={refetch}
+          />
+        </table>
+      </div>
+    </>
+  );
 }
 
-export const TableBody = <T,>({
+DataTable.Header = function Header<T, S>({
+  headerGroups,
+  sortable,
+}: HeaderProps<T, S>) {
+  return (
+    <thead className="sticky top-0 z-10 bg-gray-200">
+      {headerGroups.map((headerGroup) => (
+        <tr
+          key={headerGroup.id}
+          className="text-sm flex items-stretch justify-between px-2 py-2"
+        >
+          {headerGroup.headers.map((header) => {
+            const isSortable = sortable[header.column.id as keyof S];
+            const sortState = header.column.getIsSorted();
+
+            // helper to get sort indicator
+            function getSortIndicator() {
+              if (!isSortable) return "";
+              if (sortState === "asc") return " 🔼";
+              if (sortState === "desc") return " 🔽";
+              return <span className="text-gray-500">🔼🔽</span>;
+            }
+
+            return (
+              <th key={header.id} className="w-full">
+                <button
+                  type="button"
+                  onClick={
+                    isSortable
+                      ? header.column.getToggleSortingHandler()
+                      : undefined
+                  }
+                  className="cursor-pointer select-none font-medium min-w-26 w-full text-left"
+                >
+                  {flexRender(
+                    header.column.columnDef.header,
+                    header.getContext()
+                  )}
+                  {getSortIndicator()}
+                </button>
+              </th>
+            );
+          })}
+        </tr>
+      ))}
+    </thead>
+  );
+};
+
+DataTable.Body = function TableBody<T>({
   table,
   tableContainerRef,
   refetch,
-}: TableBodyProps<T>) => {
+}: TableBodyProps<T>) {
   const { rows } = table.getRowModel();
 
-  // Important: Keep the row virtualizer in the lowest component possible to avoid unnecessary re-renders.
   const rowVirtualizer = useVirtualizer<HTMLDivElement, HTMLTableRowElement>({
     count: rows.length,
     estimateSize: () => 33, //estimate row height for accurate scrollbar dragging
@@ -35,6 +139,8 @@ export const TableBody = <T,>({
     overscan: 5,
   });
 
+  const virtualItems = rowVirtualizer.getVirtualItems();
+
   return (
     <tbody
       style={{
@@ -43,10 +149,10 @@ export const TableBody = <T,>({
         position: "relative", //needed for absolute positioning of rows
       }}
     >
-      {rowVirtualizer.getVirtualItems().map((virtualRow) => {
+      {virtualItems.map((virtualRow) => {
         const row = rows[virtualRow.index] as Row<T>;
         return (
-          <TableBodyRow<T>
+          <DataTable.Row<T>
             key={row.id}
             row={row}
             virtualRow={virtualRow}
@@ -59,19 +165,7 @@ export const TableBody = <T,>({
   );
 };
 
-interface TableBodyRowProps<T> {
-  row: Row<T>;
-  virtualRow: VirtualItem;
-  rowVirtualizer: Virtualizer<HTMLDivElement, HTMLTableRowElement>;
-  refetch: () => void;
-}
-
-interface DragData {
-  source: Teacher;
-  courseId: string;
-}
-
-function TableBodyRow<T>({
+DataTable.Row = function TableRow<T>({
   row,
   virtualRow,
   rowVirtualizer,
@@ -85,7 +179,9 @@ function TableBodyRow<T>({
   const handleDrop = (e: React.DragEvent, courseId: string) => {
     e.preventDefault();
     const data = JSON.parse(e.dataTransfer.getData("text/plain")) as DragData;
+
     if (data.courseId !== courseId) return alert("Invalid column"); // block horizontal drop
+
     const updatedCoursesForSource = (data.source as Teacher).courses.filter(
       (c) => c.id !== courseId
     );
@@ -112,9 +208,7 @@ function TableBodyRow<T>({
           }
         );
 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const updatedSourceTeacher = await teacherRes.json();
-        // console.log(updatedSourceTeacher);
+        await teacherRes.json();
 
         const targetTeacherRes = await fetch(
           `http://localhost:3000/teachers/${targetTeacher.id}`,
@@ -123,9 +217,8 @@ function TableBodyRow<T>({
             body: JSON.stringify(targetTeacher),
           }
         );
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const updatedTargetTeacher = await targetTeacherRes.json();
-        // console.log(updatedTargetTeacher);
+
+        await targetTeacherRes.json();
 
         refetch();
       } catch (error) {
@@ -135,7 +228,6 @@ function TableBodyRow<T>({
     }
 
     assignCourse();
-    console.log(row.original, data.source);
   };
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -183,4 +275,4 @@ function TableBodyRow<T>({
       })}
     </tr>
   );
-}
+};
