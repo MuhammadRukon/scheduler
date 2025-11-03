@@ -53,8 +53,8 @@ division: Division; //enum
 otherRoles: string[];
 maxLoad: number;
 courses: Array<Course & { periods: number }>;
- cpts: number; // couldn't find a way to calculate this, so assuming this will come from the backend
-}
+cpts: number; //could not find a way to calculate this, so assuming this will come from the backend
+ }
 
 Division
 {
